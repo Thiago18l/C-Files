@@ -1,0 +1,36 @@
+// Fibonacci
+
+#include <stdio.h>
+#include <conio.h>
+#include <locale.h>
+// Questão 1. Lab2
+int fibonacci(int num)
+{
+	int a=0, b=1, aju, contador=0, i;
+	printf("%d%d", a,b);
+	for(i=0;i<num;i++){
+		aju= a+b;
+		a=b;
+		b= aju;
+		printf("%d",aju);
+		contador+= aju;
+		
+	}
+	printf("\nA somatoria e: \n");
+	return contador;
+}
+	int main(){
+		setlocale(LC_ALL, "Portuguese");
+		int num;
+		
+		printf("Digite a quantidade de termos:\n");
+		scanf("%d", &num);
+		printf("\n%d\n", fibonacci(num));
+		
+
+		
+		
+		
+		
+	
+	}
