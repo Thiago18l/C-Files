@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+#include <locale.h>
+#include <conio.h>
+
+
+// Maior valor entre 3 números.
+float max(float a, float b, float c){
+if(a > b && a > c){
+ 	return a;
+ }else {
+ 	if( b > c){
+ 		return b;
+    }
+    else {
+    	return c;
+        }
+    }
+ }
+main(){
+setlocale(LC_ALL, "Portuguese");
+
+ float n1, n2, n3;
+ printf ("digite 3 numeros: ");
+ scanf("%f %f %f", &n1, &n2, &n3);
+ printf(" O maior valor é : %f", max(n1, n2, n3));
+  }
